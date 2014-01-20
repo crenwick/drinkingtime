@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Drinking Time</string>
+    <string name="action_settings">Settings</string>
+    <string name="rule1">Princess makes an appearance</string>
+    <string name="rule2">Someone farts</string>
+    <string name="rule3">A person or building eats a piece of candy</string>
+    <string name="rule4">Someone uses spaghetti arms</string>
+    <string name="rule5">Someone says \"Algebraic\"</string>
+    <string name="rule6">Gunter breaks something</string>
+    <string name="rule7">Ice King catpures a princess</string>
+    <string name="rule8">Princess Bubblegum gives mixed signals</string>
+    <string name="rule9">Ice King\'s crown is knocked off</string>
+    <string name="rule10">Jake uses his stretchy powers</string>
+    <string name="rule11">Bmo talks to himself</string>
+    <string name="rule12">Jake eats ice cream</string>
+    <string name="rule13">Someone plays Bmo</string>
+    <string name="rule14">Spot the snail!</string>
+    <string name="rule15">Finn removes his hat!</string>
+    <string name="drink1">drink 1</string>
+    <string name="finishDrink">finish drink</string>
+
+</resources>
