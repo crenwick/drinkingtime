@@ -8,13 +8,13 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"  
+        android:layout_height="wrap_content"
         android:orientation="vertical" >
 
         <RelativeLayout style="@style/card" >
 
             <ImageView
-                android:id="@+id/icon1" 
+                android:id="@+id/icon1"
                 style="@style/cardImage" />
 
             <TextView
@@ -141,54 +141,6 @@
                 style="@style/cardText"
                 android:layout_toRightOf="@+id/icon11"
                 android:text="@string/rule11" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon12"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon12"
-                android:text="@string/rule12" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon13"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon13"
-                android:text="@string/rule13" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon14"
-                style="@style/cardImageFinish" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon14"
-                android:text="@string/rule14" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon15"
-                style="@style/cardImageFinish" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon15"
-                android:text="@string/rule15" />
         </RelativeLayout>
     </LinearLayout>
 

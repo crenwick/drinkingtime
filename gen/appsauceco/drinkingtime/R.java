@@ -27,14 +27,10 @@ public final class R {
         public static final int shot=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f080010;
+        public static final int action_settings=0x7f08000c;
         public static final int icon1=0x7f080001;
         public static final int icon10=0x7f08000a;
         public static final int icon11=0x7f08000b;
-        public static final int icon12=0x7f08000c;
-        public static final int icon13=0x7f08000d;
-        public static final int icon14=0x7f08000e;
-        public static final int icon15=0x7f08000f;
         public static final int icon2=0x7f080002;
         public static final int icon3=0x7f080003;
         public static final int icon4=0x7f080004;
@@ -54,15 +50,11 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int drink1=0x7f050011;
-        public static final int finishDrink=0x7f050012;
+        public static final int drink1=0x7f05000d;
+        public static final int finishDrink=0x7f05000e;
         public static final int rule1=0x7f050002;
         public static final int rule10=0x7f05000b;
         public static final int rule11=0x7f05000c;
-        public static final int rule12=0x7f05000d;
-        public static final int rule13=0x7f05000e;
-        public static final int rule14=0x7f05000f;
-        public static final int rule15=0x7f050010;
         public static final int rule2=0x7f050003;
         public static final int rule3=0x7f050004;
         public static final int rule4=0x7f050005;

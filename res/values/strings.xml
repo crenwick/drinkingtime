@@ -3,21 +3,17 @@
 
     <string name="app_name">Drinking Time</string>
     <string name="action_settings">Settings</string>
-    <string name="rule1">Anytime a Princess.</string>
+    <string name="rule1">Anytime a Princess makes an appearance.</string>
     <string name="rule2">Every time someone farts or barfs.</string>
-    <string name="rule3">Every time any person or Part of the Candy Kingdom is eaten.</string>
-    <string name="rule4">Anytime Someone uses spaghetti arms.</string>
-    <string name="rule5">Every time someone says something \"Mathmatical\".</string>
-    <string name="rule6">Anytime Gunter breaks something.</string>
-    <string name="rule7">Every time Ice King catpures a princess.</string>
-    <string name="rule8">Anytime Princess Bubblegum gives mixed signals.</string>
-    <string name="rule9">Every time Ice King\'s crown is knocked off.</string>
-    <string name="rule10">Anytime Jake uses his stretchy powers.</string>
-    <string name="rule11">Every time Bmo talks to himself</string>
-    <string name="rule12">Every time Jake eats ice cream.</string>
-    <string name="rule13">Anytime someone plays Bmo.</string>
-    <string name="rule14">Anytime you spot the snail!</string>
-    <string name="rule15">Every time Finn removes his hat!</string>
+    <string name="rule3">Anytime Someone uses spaghetti arms.</string>
+    <string name="rule4">Every time someone says something \"Mathmatical\".</string>
+    <string name="rule5">Every time Ice King catpures a princess.</string>
+    <string name="rule6">Anytime Princess Bubblegum gives mixed signals.</string>
+    <string name="rule7">Every time Ice King\'s crown is knocked off.</string>
+    <string name="rule8">Anytime Jake uses his stretchy powers.</string>
+    <string name="rule9">Anytime someone plays Bmo.</string>
+    <string name="rule10">Anytime you spot the snail!</string>
+    <string name="rule11">Anytime someone sings a song drink for the entire song</string>
     <string name="drink1">drink 1</string>
     <string name="finishDrink">finish drink</string>
 
