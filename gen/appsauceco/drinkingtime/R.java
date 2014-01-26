@@ -21,13 +21,13 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int bg_card=0x7f020000;
-        public static final int drink=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int shot=0x7f020003;
+        public static final int appsauce=0x7f020000;
+        public static final int bg_card=0x7f020001;
+        public static final int drink=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int shot_blue=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000c;
         public static final int icon1=0x7f080001;
         public static final int icon10=0x7f08000a;
         public static final int icon11=0x7f08000b;
@@ -39,6 +39,7 @@ public final class R {
         public static final int icon7=0x7f080007;
         public static final int icon8=0x7f080008;
         public static final int icon9=0x7f080009;
+        public static final int more_apps=0x7f08000c;
         public static final int scrollView1=0x7f080000;
     }
     public static final class layout {
@@ -48,21 +49,22 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int drink1=0x7f05000d;
-        public static final int finishDrink=0x7f05000e;
-        public static final int rule1=0x7f050002;
-        public static final int rule10=0x7f05000b;
-        public static final int rule11=0x7f05000c;
-        public static final int rule2=0x7f050003;
-        public static final int rule3=0x7f050004;
-        public static final int rule4=0x7f050005;
-        public static final int rule5=0x7f050006;
-        public static final int rule6=0x7f050007;
-        public static final int rule7=0x7f050008;
-        public static final int rule8=0x7f050009;
-        public static final int rule9=0x7f05000a;
+        public static final int drink1=0x7f05000e;
+        public static final int finishDrink=0x7f05000f;
+        public static final int more_apps=0x7f050001;
+        public static final int rule1=0x7f050003;
+        public static final int rule10=0x7f05000c;
+        public static final int rule11=0x7f05000d;
+        public static final int rule2=0x7f050004;
+        public static final int rule3=0x7f050005;
+        public static final int rule4=0x7f050006;
+        public static final int rule5=0x7f050007;
+        public static final int rule6=0x7f050008;
+        public static final int rule7=0x7f050009;
+        public static final int rule8=0x7f05000a;
+        public static final int rule9=0x7f05000b;
+        public static final int toast=0x7f050002;
     }
     public static final class style {
         /** 

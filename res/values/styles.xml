@@ -31,14 +31,16 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_alignParentTop">true</item>
+        <item name="android:onClick">oneDrink</item>
         <item name="android:contentDescription">@string/drink1</item>
-        <item name="android:src">@drawable/shot</item>
+        <item name="android:src">@drawable/shot_blue</item>
     </style>
 
     <style name="cardImageFinish">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_alignParentTop">true</item>
+        <item name="android:onClick">finishDrink</item>
         <item name="android:contentDescription">@string/finishDrink</item>
         <item name="android:src">@drawable/drink</item>
     </style>
