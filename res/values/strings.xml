@@ -15,7 +15,7 @@
     <string name="rule9">Anytime someone plays Bmo.</string>
     <string name="rule10">Every time you spot the snail!</string>
     <string name="rule11">Anytime someone sings a song, drink until it\'s over.</string>
-    <string name="drink1">drink 1</string>
+    <string name="drinkOne">drink one</string>
     <string name="finishDrink">finish drink</string>
 
 </resources>

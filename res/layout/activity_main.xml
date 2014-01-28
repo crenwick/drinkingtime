@@ -33,7 +33,7 @@
 
                 <TextView
                     style="@style/cardText"
-                    android:layout_toRightOf="@+id/icon1"
+                    android:layout_toRightOf="@id/icon1"
                     android:text="@string/rule1" />
             </RelativeLayout>
 

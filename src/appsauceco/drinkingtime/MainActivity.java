@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -25,13 +24,14 @@ public class MainActivity extends Activity {
 
 		adView = new AdView(this);
 		adView.setAdUnitId("ca-app-pub-7649747947968832/4431607104");
-		adView.setAdSize(AdSize.BANNER);
+		adView.setAdSize(AdSize.SMART_BANNER);
 		
 		//RelativeLayout layout2 = (RelativeLayout)findViewById(R.id.mainLayout);
 		LinearLayout layout = (LinearLayout)findViewById(R.id.adView);
 		layout.addView(adView);
 		AdRequest adRequest = new AdRequest.Builder()
 		.addTestDevice("6b0284de")
+		.addTestDevice("c0808a004e5b92f")
 		.build();
 		adView.loadAd(adRequest);
 	}

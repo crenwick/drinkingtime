@@ -351,7 +351,7 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int drink1=0x7f060028;
+        public static final int drinkOne=0x7f060028;
         public static final int finishDrink=0x7f060029;
         public static final int more_apps=0x7f06001b;
         public static final int rule1=0x7f06001d;
@@ -397,7 +397,13 @@ containing a value of this type.
         public static final int card=0x7f090002;
         public static final int cardImage=0x7f090003;
         public static final int cardImageFinish=0x7f090004;
+        public static final int cardImageFinishTb=0x7f090008;
+        public static final int cardImageTb=0x7f090007;
+        /**  TABLET STYLES BELOW 
+         */
+        public static final int cardTb=0x7f090006;
         public static final int cardText=0x7f090005;
+        public static final int cardTextTb=0x7f090009;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.

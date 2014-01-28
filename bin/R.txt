@@ -112,7 +112,7 @@ int string common_google_play_services_update_text 0x7f060008
 int string common_google_play_services_update_title 0x7f060007
 int string common_signin_button_text 0x7f060012
 int string common_signin_button_text_long 0x7f060013
-int string drink1 0x7f060028
+int string drinkOne 0x7f060028
 int string finishDrink 0x7f060029
 int string more_apps 0x7f06001b
 int string rule1 0x7f06001d
@@ -132,7 +132,11 @@ int style AppTheme 0x7f090001
 int style card 0x7f090002
 int style cardImage 0x7f090003
 int style cardImageFinish 0x7f090004
+int style cardImageFinishTb 0x7f090008
+int style cardImageTb 0x7f090007
+int style cardTb 0x7f090006
 int style cardText 0x7f090005
+int style cardTextTb 0x7f090009
 int[] styleable AdsAttrs { 0x7f010000, 0x7f010001, 0x7f010002 }
 int styleable AdsAttrs_adSize 0
 int styleable AdsAttrs_adSizes 1
