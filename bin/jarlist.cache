@@ -1,0 +1,5 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1390863358000 1283446 826507592fec9d8e26db18364e709df133c749ce /Users/crenwick/git/drinkingtime/libs/google-play-services.jar
+1390863358000 1283446 826507592fec9d8e26db18364e709df133c749ce /Applications/adt-bundle-mac-x86_64-20131030/sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar

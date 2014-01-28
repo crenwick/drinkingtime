@@ -1,148 +1,162 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView1"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context=".MainActivity" >
+    android:background="#000000" >
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:orientation="vertical" >
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon1"
-                style="@style/cardImage"/>
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon1"
-                
-                android:text="@string/rule1" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon2"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon2"
-                android:text="@string/rule2" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon3"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon3"
-                android:text="@string/rule3" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon4"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon4"
-                android:text="@string/rule4" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon5"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon5"
-                android:text="@string/rule5" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon6"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon6"
-                android:text="@string/rule6" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon7"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon7"
-                android:text="@string/rule7" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon8"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon8"
-                android:text="@string/rule8" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon9"
-                style="@style/cardImage" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon9"
-                android:text="@string/rule9" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon10"
-                style="@style/cardImageFinish" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon10"
-                android:text="@string/rule10" />
-        </RelativeLayout>
-
-        <RelativeLayout style="@style/card" >
-
-            <ImageView
-                android:id="@+id/icon11"
-                style="@style/cardImageFinish" />
-
-            <TextView
-                style="@style/cardText"
-                android:layout_toRightOf="@+id/icon11"
-                android:text="@string/rule11" />
-        </RelativeLayout>
     </LinearLayout>
 
-</ScrollView>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adView"
+        android:background="#000000" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon1"
+                    android:text="@string/rule1" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon2"
+                    android:text="@string/rule2" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon3"
+                    android:text="@string/rule3" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon4"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon4"
+                    android:text="@string/rule4" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon5"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon5"
+                    android:text="@string/rule5" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon6"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon6"
+                    android:text="@string/rule6" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon7"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon7"
+                    android:text="@string/rule7" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon8"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon8"
+                    android:text="@string/rule8" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon9"
+                    style="@style/cardImage" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon9"
+                    android:text="@string/rule9" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon10"
+                    style="@style/cardImageFinish" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon10"
+                    android:text="@string/rule10" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/card" >
+
+                <ImageView
+                    android:id="@+id/icon11"
+                    style="@style/cardImageFinish" />
+
+                <TextView
+                    style="@style/cardText"
+                    android:layout_toRightOf="@+id/icon11"
+                    android:text="@string/rule11" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

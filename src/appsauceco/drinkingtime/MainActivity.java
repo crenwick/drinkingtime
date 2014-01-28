@@ -7,14 +7,45 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
+public class MainActivity extends Activity {
+	private AdView adView;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		adView = new AdView(this);
+		adView.setAdUnitId("ca-app-pub-7649747947968832/4431607104");
+		adView.setAdSize(AdSize.BANNER);
+		
+		//RelativeLayout layout2 = (RelativeLayout)findViewById(R.id.mainLayout);
+		LinearLayout layout = (LinearLayout)findViewById(R.id.adView);
+		layout.addView(adView);
+		AdRequest adRequest = new AdRequest.Builder()
+		.addTestDevice("6b0284de")
+		.build();
+		adView.loadAd(adRequest);
+	}
+	
+	@Override
+	protected void onPause() {
+		adView.pause();
+		super.onPause();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		adView.resume();
 	}
 
 	@Override
@@ -37,19 +68,24 @@ public class MainActivity extends Activity {
 
 	@FromXML
 	public void oneDrink(View ImageView) {
-		Toast.makeText(this, "Drink once!", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Drink once!", Toast.LENGTH_SHORT).show();
 	}
-	
+
 	@FromXML
 	public void finishDrink(View ImageView) {
-		Toast.makeText(this, "Finish your drink!", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Finish your drink!", Toast.LENGTH_SHORT).show();
 	}
-	
+
 	public void appSauce(View v) {
 		String url = "https://play.google.com/store/apps/developer?id=SideStreet,+Inc.";
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setData(Uri.parse(url));
 		startActivity(i);
 	}
-
+	
+	@Override
+	protected void onDestroy() {
+		adView.destroy();
+		super.onDestroy();
+	}
 }
