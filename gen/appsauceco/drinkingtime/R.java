@@ -351,21 +351,22 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int drinkOne=0x7f060028;
-        public static final int finishDrink=0x7f060029;
+        public static final int drinkOnce=0x7f060029;
+        public static final int drinkOne=0x7f060027;
+        public static final int finishDrink=0x7f060028;
+        public static final int finishYourDrink=0x7f06002a;
         public static final int more_apps=0x7f06001b;
-        public static final int rule1=0x7f06001d;
-        public static final int rule10=0x7f060026;
-        public static final int rule11=0x7f060027;
-        public static final int rule2=0x7f06001e;
-        public static final int rule3=0x7f06001f;
-        public static final int rule4=0x7f060020;
-        public static final int rule5=0x7f060021;
-        public static final int rule6=0x7f060022;
-        public static final int rule7=0x7f060023;
-        public static final int rule8=0x7f060024;
-        public static final int rule9=0x7f060025;
-        public static final int toast=0x7f06001c;
+        public static final int rule1=0x7f06001c;
+        public static final int rule10=0x7f060025;
+        public static final int rule11=0x7f060026;
+        public static final int rule2=0x7f06001d;
+        public static final int rule3=0x7f06001e;
+        public static final int rule4=0x7f06001f;
+        public static final int rule5=0x7f060020;
+        public static final int rule6=0x7f060021;
+        public static final int rule7=0x7f060022;
+        public static final int rule8=0x7f060023;
+        public static final int rule9=0x7f060024;
     }
     public static final class style {
         /** 

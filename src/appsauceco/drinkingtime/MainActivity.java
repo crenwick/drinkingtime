@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		
 		adView = new AdView(this);
 		adView.setAdUnitId("ca-app-pub-7649747947968832/4431607104");
 		adView.setAdSize(AdSize.SMART_BANNER);
@@ -34,6 +35,7 @@ public class MainActivity extends Activity {
 		.addTestDevice("c0808a004e5b92f")
 		.build();
 		adView.loadAd(adRequest);
+		
 	}
 	
 	@Override
@@ -68,12 +70,12 @@ public class MainActivity extends Activity {
 
 	@FromXML
 	public void oneDrink(View ImageView) {
-		Toast.makeText(this, "Drink once!", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, R.string.drinkOnce, Toast.LENGTH_SHORT).show();
 	}
 
 	@FromXML
 	public void finishDrink(View ImageView) {
-		Toast.makeText(this, "Finish your drink!", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, R.string.finishYourDrink, Toast.LENGTH_SHORT).show();
 	}
 
 	public void appSauce(View v) {

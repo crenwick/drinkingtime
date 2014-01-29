@@ -3,7 +3,6 @@
 
     <string name="app_name">Drinking Time</string>
     <string name="more_apps">More apps from App Sauce</string>
-    <string name="toast">Toast!</string>
     <string name="rule1">Anytime a Princess makes an appearance.</string>
     <string name="rule2">Every time Jake uses his powers. </string>
     <string name="rule3">Anytime someone uses spaghetti arms.</string>
@@ -17,5 +16,7 @@
     <string name="rule11">Anytime someone sings a song, drink until it\'s over.</string>
     <string name="drinkOne">drink one</string>
     <string name="finishDrink">finish drink</string>
+    <string name="drinkOnce">Drink once!</string>
+    <string name="finishYourDrink">Finish your drink!</string>
 
 </resources>
