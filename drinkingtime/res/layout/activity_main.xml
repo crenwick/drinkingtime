@@ -125,7 +125,7 @@
 
                 <ImageView
                     android:id="@+id/icon9"
-                    style="@style/cardImage" />
+                    style="@style/cardImageFinish" />
 
                 <TextView
                     style="@style/cardText"
@@ -143,18 +143,6 @@
                     style="@style/cardText"
                     android:layout_toRightOf="@id/icon10"
                     android:text="@string/rule10" />
-            </RelativeLayout>
-
-            <RelativeLayout style="@style/card" >
-
-                <ImageView
-                    android:id="@+id/icon11"
-                    style="@style/cardImageFinish" />
-
-                <TextView
-                    style="@style/cardText"
-                    android:layout_toRightOf="@id/icon11"
-                    android:text="@string/rule11" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

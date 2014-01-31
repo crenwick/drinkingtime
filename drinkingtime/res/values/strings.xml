@@ -3,17 +3,16 @@
 
     <string name="app_name">Drinking Time</string>
     <string name="more_apps">More apps from App Sauce</string>
-    <string name="rule1">Anytime a Princess makes an appearance.</string>
-    <string name="rule2">Every time Jake uses his powers. </string>
-    <string name="rule3">Anytime someone uses spaghetti arms.</string>
-    <string name="rule4">Every time Ice King captures and man-handles a princess.</string>
-    <string name="rule5">Every time someone says something "Mathmatical.”</string>
-    <string name="rule6">Anytime Princess Bubblegum gives mixed signals.</string>
-    <string name="rule7">Every time Ice King\'s crown is knocked off.</string>
-    <string name="rule8">Every time someone farts, barfs or burps.</string>
-    <string name="rule9">Anytime someone plays Bmo.</string>
-    <string name="rule10">Every time you spot the snail!</string>
-    <string name="rule11">Anytime someone sings a song, drink until it\'s over.</string>
+    <string name="rule1">A Princess makes an appearance.</string>
+    <string name="rule2">Jake uses his powers. </string>
+    <string name="rule3">Someone uses spaghetti arms.</string>
+    <string name="rule4">Ice King captures and man-handles a princess.</string>
+    <string name="rule5">Princess Bubblegum gives mixed signals.</string>
+    <string name="rule6">Ice King\'s crown is knocked off.</string>
+    <string name="rule7">Someone farts, barfs or burps.</string>
+    <string name="rule8">Someone plays Bmo.</string>
+    <string name="rule9">Spot the snail!</string>
+    <string name="rule10">If someone sings a song, drink until it\'s over.</string>
     <string name="drinkOne">drink one</string>
     <string name="finishDrink">finish drink</string>
     <string name="drinkOnce">Drink once!</string>

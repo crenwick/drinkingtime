@@ -229,7 +229,6 @@ containing a value of this type.
         public static final int hybrid=0x7f050004;
         public static final int icon1=0x7f050008;
         public static final int icon10=0x7f050011;
-        public static final int icon11=0x7f050012;
         public static final int icon2=0x7f050009;
         public static final int icon3=0x7f05000a;
         public static final int icon4=0x7f05000b;
@@ -239,7 +238,7 @@ containing a value of this type.
         public static final int icon8=0x7f05000f;
         public static final int icon9=0x7f050010;
         public static final int mainLayout=0x7f050005;
-        public static final int more_apps=0x7f050013;
+        public static final int more_apps=0x7f050012;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
         public static final int satellite=0x7f050002;
@@ -351,14 +350,13 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int drinkOnce=0x7f060029;
-        public static final int drinkOne=0x7f060027;
-        public static final int finishDrink=0x7f060028;
-        public static final int finishYourDrink=0x7f06002a;
+        public static final int drinkOnce=0x7f060028;
+        public static final int drinkOne=0x7f060026;
+        public static final int finishDrink=0x7f060027;
+        public static final int finishYourDrink=0x7f060029;
         public static final int more_apps=0x7f06001b;
         public static final int rule1=0x7f06001c;
         public static final int rule10=0x7f060025;
-        public static final int rule11=0x7f060026;
         public static final int rule2=0x7f06001d;
         public static final int rule3=0x7f06001e;
         public static final int rule4=0x7f06001f;
