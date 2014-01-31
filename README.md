@@ -15,5 +15,5 @@ Uses Google-Play-Services library for banner ads.
 
 ##Links:
 https://play.google.com/store/apps/details?id=appsauceco.drinkingtime
-
+This is an [example link](https://play.google.com/store/apps/details?id=appsauceco.drinkingtime).
 https://play.google.com/store/apps/developer?id=App+Sauce+Co.
