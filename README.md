@@ -14,6 +14,6 @@ An Android app drinking game for the TV show Adventure Time.
 Uses Google-Play-Services library for banner ads.
 
 ##Links:
-https://play.google.com/store/apps/details?id=appsauceco.drinkingtime
-This is an [example link](https://play.google.com/store/apps/details?id=appsauceco.drinkingtime).
-https://play.google.com/store/apps/developer?id=App+Sauce+Co.
+[App link](https://play.google.com/store/apps/details?id=appsauceco.drinkingtime)
+
+[Developer app store link](https://play.google.com/store/apps/developer?id=App+Sauce+Co)
