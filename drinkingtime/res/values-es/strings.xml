@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bebida de Tiempo</string>
+    <string name="more_apps">Más apps de App Salsa</string>
+    <string name="rule1">Una Princesa hace un aspecto.</string>
+    <string name="rule2">Jake usa sus poderes.</string>
+    <string name="rule3">Alguien usa brazos de espagueti.</string>
+    <string name="rule4">Ice King captura y manipula a una princesa.</string>
+    <string name="rule5">La princesa Bubblegum da señales surtidas(mixtas).</string>
+    <string name="rule6">La corona del Rey De hielo es largado.</string>
+    <string name="rule7">Alguien se tira un pedo, barfs o eructos.</string>
+    <string name="rule8">Alguien juega Bmo.</string>
+    <string name="rule9">¡Descubra el caracol!</string>
+    <string name="rule10">Si alguien canta una canción, la bebida hasta que sea terminado.</string>
+    <string name="drinkOne">bebida un</string>
+    <string name="finishDrink">bebida de fin</string>
+    <string name="drinkOnce">¡Bebida una vez!</string>
+    <string name="finishYourDrink">¡Termine su bebida!</string>
+
+</resources>
