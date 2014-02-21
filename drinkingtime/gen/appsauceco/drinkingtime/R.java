@@ -8,6 +8,9 @@
 package appsauceco.drinkingtime;
 
 public final class R {
+    public static final class array {
+        public static final int level1=0x7f090000;
+    }
     public static final class attr {
         /** 
     The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
@@ -185,7 +188,6 @@ containing a value of this type.
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
- Default screen margins, per the Android Design guidelines. 
          */
         public static final int activity_horizontal_margin=0x7f080000;
         public static final int activity_vertical_margin=0x7f080001;
@@ -228,32 +230,25 @@ containing a value of this type.
     public static final class id {
         public static final int adView=0x7f050006;
         public static final int hybrid=0x7f050004;
-        public static final int icon1=0x7f050008;
-        public static final int icon10=0x7f050011;
-        public static final int icon2=0x7f050009;
-        public static final int icon3=0x7f05000a;
-        public static final int icon4=0x7f05000b;
-        public static final int icon5=0x7f05000c;
-        public static final int icon6=0x7f05000d;
-        public static final int icon7=0x7f05000e;
-        public static final int icon8=0x7f05000f;
-        public static final int icon9=0x7f050010;
+        public static final int imageView=0x7f050008;
+        public static final int listView=0x7f050007;
         public static final int mainLayout=0x7f050005;
-        public static final int more_apps=0x7f050012;
+        public static final int more_apps=0x7f05000a;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
         public static final int satellite=0x7f050002;
-        public static final int scrollView1=0x7f050007;
         public static final int terrain=0x7f050003;
+        public static final int textView=0x7f050009;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f070000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int single_row=0x7f030001;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
+        public static final int main=0x7f0b0000;
     }
     public static final class string {
         public static final int app_name=0x7f06001a;
@@ -351,21 +346,11 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int drinkOnce=0x7f060028;
-        public static final int drinkOne=0x7f060026;
-        public static final int finishDrink=0x7f060027;
-        public static final int finishYourDrink=0x7f060029;
+        public static final int drinkOnce=0x7f06001e;
+        public static final int drinkOne=0x7f06001c;
+        public static final int finishDrink=0x7f06001d;
+        public static final int finishYourDrink=0x7f06001f;
         public static final int more_apps=0x7f06001b;
-        public static final int rule1=0x7f06001c;
-        public static final int rule10=0x7f060025;
-        public static final int rule2=0x7f06001d;
-        public static final int rule3=0x7f06001e;
-        public static final int rule4=0x7f06001f;
-        public static final int rule5=0x7f060020;
-        public static final int rule6=0x7f060021;
-        public static final int rule7=0x7f060022;
-        public static final int rule8=0x7f060023;
-        public static final int rule9=0x7f060024;
     }
     public static final class style {
         /** 
@@ -388,34 +373,22 @@ containing a value of this type.
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
-
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
-        public static final int AppBaseTheme=0x7f090000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
- Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090001;
-        public static final int card=0x7f090002;
-        public static final int cardImage=0x7f090003;
-        public static final int cardImageFinish=0x7f090004;
-        public static final int cardImageFinishTb=0x7f090008;
-        public static final int cardImageTb=0x7f090007;
+        public static final int AppTheme=0x7f0a0001;
+        public static final int card=0x7f0a0002;
+        public static final int cardImage=0x7f0a0003;
+        public static final int cardImageFinish=0x7f0a0004;
+        public static final int cardImageFinishTb=0x7f0a0008;
+        public static final int cardImageTb=0x7f0a0007;
         /**  TABLET STYLES BELOW 
- TABLET STYLES BELOW 
          */
-        public static final int cardTb=0x7f090006;
-        public static final int cardText=0x7f090005;
-        public static final int cardTextTb=0x7f090009;
+        public static final int cardTb=0x7f0a0006;
+        public static final int cardText=0x7f0a0005;
+        public static final int cardTextTb=0x7f0a0009;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.

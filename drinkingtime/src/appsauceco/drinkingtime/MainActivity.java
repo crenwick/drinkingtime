@@ -1,13 +1,23 @@
 package appsauceco.drinkingtime;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -16,34 +26,100 @@ import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
 	private AdView adView;
-	
+	ListView list;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		list = (ListView) findViewById(R.id.listView);
+		list.setAdapter(new rulesAdapter(this));
+		// still need to set list adapter
 
-		
 		adView = new AdView(this);
 		adView.setAdUnitId("ca-app-pub-7649747947968832/4431607104");
 		adView.setAdSize(AdSize.SMART_BANNER);
-		
-		//RelativeLayout layout2 = (RelativeLayout)findViewById(R.id.mainLayout);
-		LinearLayout layout = (LinearLayout)findViewById(R.id.adView);
+
+		// RelativeLayout layout2 =
+		// (RelativeLayout)findViewById(R.id.mainLayout);
+		LinearLayout layout = (LinearLayout) findViewById(R.id.adView);
 		layout.addView(adView);
-		AdRequest adRequest = new AdRequest.Builder()
-		.addTestDevice("6b0284de")
-		.addTestDevice("c0808a004e5b92f")
-		.build();
+		AdRequest adRequest = new AdRequest.Builder().addTestDevice("6b0284de")
+				.addTestDevice("c0808a004e5b92f").build();
 		adView.loadAd(adRequest);
-		
+
 	}
-	
+
+	class SingleRow {
+		String rule;
+		int drinkSize;
+
+		// constructer
+		SingleRow(String rule, int drinkSize) {
+			this.rule = rule;
+			this.drinkSize = drinkSize;
+		}
+	}
+
+	class rulesAdapter extends BaseAdapter {
+		ArrayList<SingleRow> list;
+		Context context;
+
+		rulesAdapter(Context c) {
+			list = new ArrayList<SingleRow>();
+			context = c;
+			Resources res = c.getResources();
+			String[] rules = res.getStringArray(R.array.level1);
+			int[] drinkSize = { R.drawable.shot_blue, R.drawable.shot_blue,
+					R.drawable.shot_blue, R.drawable.shot_blue,
+					R.drawable.shot_blue, R.drawable.shot_blue,
+					R.drawable.shot_blue, R.drawable.shot_blue,
+					R.drawable.drink, R.drawable.drink };
+			for (int i = 0; i < 10; i++) {
+				list.add(new SingleRow(rules[i], drinkSize[i]));
+			}
+
+		}
+
+		@Override
+		public int getCount() {
+			return list.size();
+		}
+
+		@Override
+		public Object getItem(int i) {
+			return list.get(i);
+		}
+
+		@Override
+		public long getItemId(int i) {
+			return i;
+		}
+
+		@Override
+		public View getView(int i, View view, ViewGroup viewGroup) {
+			LayoutInflater inflater = (LayoutInflater) context
+					.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+			View row = inflater.inflate(R.layout.single_row, viewGroup, false);
+
+			TextView rule = (TextView) row.findViewById(R.id.textView);
+			ImageView drinkSize = (ImageView) row.findViewById(R.id.imageView);
+
+			SingleRow temp = list.get(i);
+			rule.setText(temp.rule);
+			drinkSize.setImageResource(temp.drinkSize);
+
+			return row;
+		}
+
+	}
+
 	@Override
 	protected void onPause() {
 		adView.pause();
 		super.onPause();
 	}
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
@@ -75,16 +151,16 @@ public class MainActivity extends Activity {
 
 	@FromXML
 	public void finishDrink(View ImageView) {
-		Toast.makeText(this, R.string.finishYourDrink, Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, R.string.finishYourDrink, Toast.LENGTH_SHORT)
+				.show();
 	}
 
 	public void appSauce(View v) {
-		String url = "https://play.google.com/store/apps/developer?id=App+Sauce+Co.";
 		Intent i = new Intent(Intent.ACTION_VIEW);
-		i.setData(Uri.parse(url));
+		i.setData(Uri.parse("market://search?q=pub:App+Sauce+Co."));
 		startActivity(i);
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		adView.destroy();

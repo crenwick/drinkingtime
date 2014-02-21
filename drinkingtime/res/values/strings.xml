@@ -3,19 +3,22 @@
 
     <string name="app_name">Drinking Time</string>
     <string name="more_apps">More apps from App Sauce</string>
-    <string name="rule1">A Princess makes an appearance.</string>
-    <string name="rule2">Jake uses his powers. </string>
-    <string name="rule3">Someone uses spaghetti arms.</string>
-    <string name="rule4">Ice King captures and man-handles a princess.</string>
-    <string name="rule5">Princess Bubblegum gives mixed signals.</string>
-    <string name="rule6">Ice King\'s crown is knocked off.</string>
-    <string name="rule7">Someone farts, barfs or burps.</string>
-    <string name="rule8">Someone plays Bmo.</string>
-    <string name="rule9">Spot the snail!</string>
-    <string name="rule10">If someone sings a song, drink until it\'s over.</string>
     <string name="drinkOne">drink one</string>
     <string name="finishDrink">finish drink</string>
     <string name="drinkOnce">Drink once!</string>
     <string name="finishYourDrink">Finish your drink!</string>
+
+    <string-array name="level1">
+        <item>A Princess makes an appearance.</item>
+        <item>Jake uses his powers.</item>
+        <item>Someone uses spaghetti arms.</item>
+        <item>Ice King captures and man-handles a princess.</item>
+        <item>Princess Bubblegum gives mixed signals.</item>
+        <item>Ice King\'s crown is knocked off.</item>
+        <item>Someone farts, barfs or burps.</item>
+        <item>Someone plays Bmo.</item>
+        <item>Spot the snail!</item>
+        <item>If someone sings a song, drink until it\'s over.</item>
+    </string-array>
 
 </resources>
