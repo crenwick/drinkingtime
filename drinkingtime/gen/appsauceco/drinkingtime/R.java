@@ -225,7 +225,7 @@ containing a value of this type.
         public static final int ic_plusone_small_off_client=0x7f02001d;
         public static final int ic_plusone_standard_off_client=0x7f02001e;
         public static final int ic_plusone_tall_off_client=0x7f02001f;
-        public static final int shot_blue=0x7f020020;
+        public static final int shot=0x7f020020;
     }
     public static final class id {
         public static final int adView=0x7f050006;
@@ -246,6 +246,7 @@ containing a value of this type.
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int single_row=0x7f030001;
+        public static final int single_row_finish=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;

@@ -10,9 +10,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:contentDescription="@string/drinkOnce"
-        android:onClick="oneDrink"
-        android:src="@drawable/shot" />
+        android:contentDescription="@string/finishYourDrink"
+        android:onClick="finishDrink"
+        android:src="@drawable/drink" />
 
     <TextView
         android:id="@+id/textView"

@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -52,12 +51,10 @@ public class MainActivity extends Activity {
 
 	class SingleRow {
 		String rule;
-		int drinkSize;
 
 		// constructer
-		SingleRow(String rule, int drinkSize) {
+		SingleRow(String rule) {
 			this.rule = rule;
-			this.drinkSize = drinkSize;
 		}
 	}
 
@@ -70,13 +67,9 @@ public class MainActivity extends Activity {
 			context = c;
 			Resources res = c.getResources();
 			String[] rules = res.getStringArray(R.array.level1);
-			int[] drinkSize = { R.drawable.shot_blue, R.drawable.shot_blue,
-					R.drawable.shot_blue, R.drawable.shot_blue,
-					R.drawable.shot_blue, R.drawable.shot_blue,
-					R.drawable.shot_blue, R.drawable.shot_blue,
-					R.drawable.drink, R.drawable.drink };
+			
 			for (int i = 0; i < 10; i++) {
-				list.add(new SingleRow(rules[i], drinkSize[i]));
+				list.add(new SingleRow(rules[i]));
 			}
 
 		}
@@ -100,14 +93,18 @@ public class MainActivity extends Activity {
 		public View getView(int i, View view, ViewGroup viewGroup) {
 			LayoutInflater inflater = (LayoutInflater) context
 					.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-			View row = inflater.inflate(R.layout.single_row, viewGroup, false);
+			View row;
+			if(i<8){
+				row = inflater.inflate(R.layout.single_row, viewGroup, false);
+			} else {
+				row = inflater.inflate(R.layout.single_row_finish, viewGroup, false);
+			}
+			
 
 			TextView rule = (TextView) row.findViewById(R.id.textView);
-			ImageView drinkSize = (ImageView) row.findViewById(R.id.imageView);
 
 			SingleRow temp = list.get(i);
 			rule.setText(temp.rule);
-			drinkSize.setImageResource(temp.drinkSize);
 
 			return row;
 		}
