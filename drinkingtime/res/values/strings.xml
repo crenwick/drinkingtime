@@ -20,5 +20,29 @@
         <item>Spot the snail!</item>
         <item>If someone sings a song, drink until it\'s over.</item>
     </string-array>
+    <string-array name="level2">
+        <item>Finn\’s love for Princess Bubblegum is mentioned</item>
+        <item>Anyone says bro or fist bumps.</item>
+        <item>Glob or lump is used in place of swearing.</item>
+        <item>Math terms are used.</item>
+        <item>Jake plays his viola or shelby shows his face.</item>
+        <item>Ice King strips or you see his underwear.</item>
+        <item>Anytime adventure time is said, yelled or mentioned.</item>
+        <item>Anytime the candy kingdom is threatened.</item>
+        <item>If the Ice King is writing in or reading his diary.</item>
+        <item>Finn\’s voice cracks.</item>
+    </string-array>
+    <string-array name="level3">
+        <item>Lsp gives a name to an animal and gossips with them.</item>
+        <item>Anytime Lsp mentions Brad or Melissa.</item>
+        <item>Drink for every penguin you see.</item>
+        <item>Anytime Marceline plays her bass.</item>
+        <item>Anytime tree trunks creeps you out.</item>
+        <item>Someone uses magic for good or evil.</item>
+        <item>Cinnamon bun fails Princess Bubblegum.</item>
+        <item>Someone plays Bmo.</item>
+        <item>Lady rainicorn appears in an episode and speaks Korean.</item>
+        <item>Anytime the Gumball Guardians awake.</item>
+    </string-array>
 
 </resources>
