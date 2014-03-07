@@ -14,10 +14,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class MainActivity extends FragmentActivity {
-	
-	// ListView list;
+
 	ViewPager viewPager = null;
+	private AdView adView;
+	private AdRequest adRequest;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +32,18 @@ public class MainActivity extends FragmentActivity {
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		viewPager.setAdapter(new MyAdapter(fragmentManager));
 
-		// list = (ListView) findViewById(R.id.listView);
-		// list.setAdapter(new rulesAdapter(this));
+		adView = (AdView) this.findViewById(R.id.adView);
+		adRequest = new AdRequest.Builder()
+				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+				.addTestDevice("6b0284de").addTestDevice("c0808a004e5b92f")
+				.build();
+		adView.loadAd(adRequest);
 
 	}
-	
-	class MyAdapter extends FragmentPagerAdapter{
 
-		public MyAdapter(FragmentManager fm) {			
+	class MyAdapter extends FragmentPagerAdapter {
+
+		public MyAdapter(FragmentManager fm) {
 			super(fm);
 			Log.d("MAIN", "FragmentManger method");
 			// TODO Auto-generated constructor stub
@@ -44,11 +52,11 @@ public class MainActivity extends FragmentActivity {
 		@Override
 		public Fragment getItem(int i) {
 			Fragment fragment = null;
-			if (i == 0){
+			if (i == 0) {
 				fragment = new FragmentLevel1();
-			} else if(i == 1){
+			} else if (i == 1) {
 				fragment = new FragmentLevel2();
-			} else if(i == 2){
+			} else if (i == 2) {
 				fragment = new FragmentLevel3();
 			}
 			Log.d("MAIN", "about to return getItem method");
@@ -59,24 +67,21 @@ public class MainActivity extends FragmentActivity {
 		public int getCount() {
 			return 3;
 		}
-		
+
 		@Override
-	    public CharSequence getPageTitle(int position) {
-	        if(position==0)
-	        {
-	            return "Level 1";
-	        }
-	        if(position==1)
-	        {
-	            return "Level 2";
-	        }
-	        if(position==2)
-	        {
-	            return "Level 3";
-	        }
-	        return null;
-	    }
-		
+		public CharSequence getPageTitle(int position) {
+			if (position == 0) {
+				return "Level 1";
+			}
+			if (position == 1) {
+				return "Level 2";
+			}
+			if (position == 2) {
+				return "Level 3";
+			}
+			return null;
+		}
+
 	}
 
 	@Override
@@ -104,13 +109,11 @@ public class MainActivity extends FragmentActivity {
 		}
 	}
 
-	@FromXML
 	public void oneDrink(View ImageView) {
 		Toast.makeText(this, R.string.drinkOnce, Toast.LENGTH_SHORT).show();
 		Log.d("MAIN", "oneDrink");
 	}
 
-	@FromXML
 	public void finishDrink(View ImageView) {
 		Toast.makeText(this, R.string.finishYourDrink, Toast.LENGTH_SHORT)
 				.show();
