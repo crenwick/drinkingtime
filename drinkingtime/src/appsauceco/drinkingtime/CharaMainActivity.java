@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-public class MainActivity extends FragmentActivity {
+public class CharaMainActivity extends FragmentActivity {
 
 	ViewPager viewPager = null;
 	private AdView adView;
@@ -27,7 +27,7 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d("MAIN", "onCreate");
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main_chara);
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		viewPager.setAdapter(new MyAdapter(fragmentManager));
@@ -53,11 +53,13 @@ public class MainActivity extends FragmentActivity {
 		public Fragment getItem(int i) {
 			Fragment fragment = null;
 			if (i == 0) {
-				fragment = new FragmentLevel1();
+				fragment = new FragmentChara1();
 			} else if (i == 1) {
-				fragment = new FragmentLevel2();
+				fragment = new FragmentChara2();
 			} else if (i == 2) {
-				fragment = new FragmentLevel3();
+				fragment = new FragmentChara3();
+			} else if (i == 3) {
+				fragment = new FragmentChara4();
 			}
 			Log.d("MAIN", "about to return getItem method");
 			return fragment;
@@ -65,19 +67,30 @@ public class MainActivity extends FragmentActivity {
 
 		@Override
 		public int getCount() {
-			return 3;
+			return 4;
 		}
 
 		@Override
 		public CharSequence getPageTitle(int position) {
 			if (position == 0) {
-				return "Level 1";
+				String string = getResources().getString(
+						appsauceco.drinkingtime.R.string.character1);
+				return string;
 			}
 			if (position == 1) {
-				return "Level 2";
+				String string = getResources().getString(
+						appsauceco.drinkingtime.R.string.character2);
+				return string;
 			}
 			if (position == 2) {
-				return "Level 3";
+				String string = getResources().getString(
+						appsauceco.drinkingtime.R.string.character3);
+				return string;
+			}
+			if (position == 3) {
+				String string = getResources().getString(
+						appsauceco.drinkingtime.R.string.character4);
+				return string;
 			}
 			return null;
 		}
@@ -101,7 +114,7 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.characters_menu, menu);
 		Log.d("MAIN", "onCreatedOptionsMenu");
 		return true;
 	}
@@ -112,8 +125,8 @@ public class MainActivity extends FragmentActivity {
 		case R.id.more_apps:
 			appSauce(null);
 			return true;
-		case R.id.switchToCharacters:
-			switchToCharacters(null);
+		case R.id.switchToGeneral:
+			switchToGeneral(null);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
@@ -126,10 +139,10 @@ public class MainActivity extends FragmentActivity {
 		startActivity(i);
 	}
 
-	public void switchToCharacters(View v) {
-		Log.d("MAIN", "swtichToCharacters");
-		Intent intent = new Intent(this, CharaMainActivity.class);
-		startActivity(intent);
+	public void switchToGeneral(View v) {
+		Log.d("MAIN", "swtichToGeneral");
+		getApplicationContext();
+		this.finish();
 	}
 
 	public void oneDrink(View ImageView) {

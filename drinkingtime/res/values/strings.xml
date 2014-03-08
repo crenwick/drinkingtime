@@ -5,8 +5,14 @@
     <string name="more_apps">More apps from App Sauce</string>
     <string name="drinkOne">drink one</string>
     <string name="finishDrink">finish drink</string>
+    <string name="characters">characters</string>
+    <string name="general">general</string>
     <string name="drinkOnce">Drink once!</string>
     <string name="finishYourDrink">Finish your drink!</string>
+    <string name="character1">Finn the Human</string>
+    <string name="character2">Jake the Dog</string>
+    <string name="character3">Ice King</string>
+    <string name="character4">Princess Bubblegum</string>
 
     <string-array name="level1">
         <item>A Princess makes an appearance.</item>
@@ -43,6 +49,54 @@
         <item>Someone plays Bmo.</item>
         <item>Lady rainicorn appears in an episode and speaks Korean.</item>
         <item>Anytime the Gumball Guardians awake.</item>
+    </string-array>
+    <string-array name="chara1">
+        <item>Finn 1</item>
+        <item>Finn 2</item>
+        <item>Finn 3</item>
+        <item>Finn 4</item>
+        <item>Finn 5</item>
+        <item>Finn 6</item>
+        <item>Finn 7</item>
+        <item>Finn 8</item>
+        <item>Finn 9</item>
+        <item>Finn 10</item>
+    </string-array>
+    <string-array name="chara2">
+        <item>Jake 1</item>
+        <item>Jake 2</item>
+        <item>Jake 3</item>
+        <item>Jake 4</item>
+        <item>Jake 5</item>
+        <item>Jake 6</item>
+        <item>Jake 7</item>
+        <item>Jake 8</item>
+        <item>Jake 9</item>
+        <item>Jake 10</item>
+    </string-array>
+    <string-array name="chara3">
+        <item>Ice King 1</item>
+        <item>Ice King 2</item>
+        <item>Ice King 3</item>
+        <item>Ice King 4</item>
+        <item>Ice King 5</item>
+        <item>Ice King 6</item>
+        <item>Ice King 7</item>
+        <item>Ice King 8</item>
+        <item>Ice King 9</item>
+        <item>Ice King 10</item>
+    </string-array>
+    <string-array name="chara4">
+        <item>Bubblegum 1</item>
+        <item>Bubblegum 2</item>
+        <item>Bubblegum 3</item>
+        <item>Bubblegum 4</item>
+        <item>Bubblegum 5</item>
+        <item>Bubblegum 6</item>
+        <item>Bubblegum 7</item>
+        <item>Bubblegum 8</item>
+        <item>Bubblegum 9</item>
+        <item>Bubblegum 10</item>
     </string-array>
 
 </resources>

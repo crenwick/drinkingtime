@@ -9,6 +9,10 @@ package appsauceco.drinkingtime;
 
 public final class R {
     public static final class array {
+        public static final int chara1=0x7f090003;
+        public static final int chara2=0x7f090004;
+        public static final int chara3=0x7f090005;
+        public static final int chara4=0x7f090006;
         public static final int level1=0x7f090000;
         public static final int level2=0x7f090001;
         public static final int level3=0x7f090002;
@@ -240,6 +244,8 @@ containing a value of this type.
         public static final int normal=0x7f050001;
         public static final int pager=0x7f050007;
         public static final int satellite=0x7f050002;
+        public static final int switchToCharacters=0x7f05000e;
+        public static final int switchToGeneral=0x7f05000d;
         public static final int terrain=0x7f050003;
         public static final int textView=0x7f05000b;
         public static final int title=0x7f050008;
@@ -249,12 +255,14 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int list_rules=0x7f030001;
-        public static final int single_row=0x7f030002;
-        public static final int single_row_finish=0x7f030003;
+        public static final int activity_main_chara=0x7f030001;
+        public static final int list_rules=0x7f030002;
+        public static final int single_row=0x7f030003;
+        public static final int single_row_finish=0x7f030004;
     }
     public static final class menu {
-        public static final int main=0x7f0b0000;
+        public static final int characters_menu=0x7f0b0000;
+        public static final int main=0x7f0b0001;
     }
     public static final class string {
         public static final int app_name=0x7f06001a;
@@ -281,6 +289,11 @@ containing a value of this type.
         [CHAR LIMIT=70] 
          */
         public static final int auth_client_using_bad_version_title=0x7f060014;
+        public static final int character1=0x7f060022;
+        public static final int character2=0x7f060023;
+        public static final int character3=0x7f060024;
+        public static final int character4=0x7f060025;
+        public static final int characters=0x7f06001e;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -352,10 +365,11 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int drinkOnce=0x7f06001e;
+        public static final int drinkOnce=0x7f060020;
         public static final int drinkOne=0x7f06001c;
         public static final int finishDrink=0x7f06001d;
-        public static final int finishYourDrink=0x7f06001f;
+        public static final int finishYourDrink=0x7f060021;
+        public static final int general=0x7f06001f;
         public static final int more_apps=0x7f06001b;
     }
     public static final class style {

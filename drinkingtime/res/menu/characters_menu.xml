@@ -5,8 +5,8 @@
         android:title="@string/more_apps" />
     
     <item
-        android:id="@+id/switchToCharacters"
+        android:id="@+id/switchToGeneral"
         android:showAsAction="always"
-        android:title="@string/characters" />
+        android:title="@string/general" />
     
 </menu>
