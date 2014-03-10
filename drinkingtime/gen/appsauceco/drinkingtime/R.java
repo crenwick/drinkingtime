@@ -9,13 +9,13 @@ package appsauceco.drinkingtime;
 
 public final class R {
     public static final class array {
-        public static final int chara1=0x7f090003;
-        public static final int chara2=0x7f090004;
-        public static final int chara3=0x7f090005;
-        public static final int chara4=0x7f090006;
-        public static final int level1=0x7f090000;
-        public static final int level2=0x7f090001;
-        public static final int level3=0x7f090002;
+        public static final int chara1=0x7f0a0003;
+        public static final int chara2=0x7f0a0004;
+        public static final int chara3=0x7f0a0005;
+        public static final int chara4=0x7f0a0006;
+        public static final int level1=0x7f0a0000;
+        public static final int level2=0x7f0a0001;
+        public static final int level3=0x7f0a0002;
     }
     public static final class attr {
         /** 
@@ -172,6 +172,9 @@ containing a value of this type.
          */
         public static final int zOrderOnTop=0x7f010010;
     }
+    public static final class bool {
+        public static final int has_two_panes=0x7f090000;
+    }
     public static final class color {
         public static final int common_action_bar_splitter=0x7f040009;
         /**  Sign-in Button Colors 
@@ -262,8 +265,8 @@ containing a value of this type.
         public static final int single_row_finish=0x7f030004;
     }
     public static final class menu {
-        public static final int characters_menu=0x7f0b0000;
-        public static final int main=0x7f0b0001;
+        public static final int characters_menu=0x7f0c0000;
+        public static final int main=0x7f0c0001;
     }
     public static final class string {
         public static final int app_name=0x7f06001a;
@@ -395,21 +398,21 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0a0000;
+        public static final int AppBaseTheme=0x7f0b0000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0a0001;
-        public static final int card=0x7f0a0002;
-        public static final int cardImage=0x7f0a0003;
-        public static final int cardImageFinish=0x7f0a0004;
-        public static final int cardImageFinishTb=0x7f0a0008;
-        public static final int cardImageTb=0x7f0a0007;
+        public static final int AppTheme=0x7f0b0001;
+        public static final int card=0x7f0b0002;
+        public static final int cardImage=0x7f0b0003;
+        public static final int cardImageFinish=0x7f0b0004;
+        public static final int cardImageFinishTb=0x7f0b0008;
+        public static final int cardImageTb=0x7f0b0007;
         /**  TABLET STYLES BELOW 
          */
-        public static final int cardTb=0x7f0a0006;
-        public static final int cardText=0x7f0a0005;
-        public static final int cardTextTb=0x7f0a0009;
+        public static final int cardTb=0x7f0b0006;
+        public static final int cardText=0x7f0b0005;
+        public static final int cardTextTb=0x7f0b0009;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.

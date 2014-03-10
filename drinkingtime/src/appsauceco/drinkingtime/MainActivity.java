@@ -22,12 +22,15 @@ public class MainActivity extends FragmentActivity {
 	ViewPager viewPager = null;
 	private AdView adView;
 	private AdRequest adRequest;
+	boolean hasTwoPanes;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Log.d("MAIN", "onCreate");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		hasTwoPanes = getResources().getBoolean(R.bool.has_two_panes);
+
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		viewPager.setAdapter(new MyAdapter(fragmentManager));
@@ -69,16 +72,38 @@ public class MainActivity extends FragmentActivity {
 		}
 
 		@Override
+		public float getPageWidth(int position) {
+			// returns 0.5f to show two panes
+			if (hasTwoPanes == true) {
+				return (0.5f);
+			} else {
+				return (1f);
+			}
+		}
+
+		@Override
 		public CharSequence getPageTitle(int position) {
-			if (position == 0) {
-				return "Level 1";
-			}
-			if (position == 1) {
-				return "Level 2";
-			}
-			if (position == 2) {
-				return "Level 3";
-			}
+			if (hasTwoPanes == true) {
+				if (position == 0) {
+					return "Level 1 and 2";
+				}
+				if (position == 1){
+					return "Level 2 and 3";
+				}
+				if (position == 2){
+					return null;
+				}
+			} else {
+				if (position == 0) {
+					return "Level 1";
+				}
+				if (position == 1) {
+					return "Level 2";
+				}
+				if (position == 2) {
+					return "Level 3";
+				}
+			} 
 			return null;
 		}
 
@@ -110,26 +135,18 @@ public class MainActivity extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.more_apps:
-			appSauce(null);
+			Intent i = new Intent(Intent.ACTION_VIEW);
+			i.setData(Uri.parse("market://search?q=pub:App+Sauce+Co."));
+			startActivity(i);
 			return true;
 		case R.id.switchToCharacters:
-			switchToCharacters(null);
+			Log.d("MAIN", "swtichToCharacters");
+			Intent intent = new Intent(this, CharaMainActivity.class);
+			startActivity(intent);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
-	}
-
-	public void appSauce(View v) {
-		Intent i = new Intent(Intent.ACTION_VIEW);
-		i.setData(Uri.parse("market://search?q=pub:App+Sauce+Co."));
-		startActivity(i);
-	}
-
-	public void switchToCharacters(View v) {
-		Log.d("MAIN", "swtichToCharacters");
-		Intent intent = new Intent(this, CharaMainActivity.class);
-		startActivity(intent);
 	}
 
 	public void oneDrink(View ImageView) {

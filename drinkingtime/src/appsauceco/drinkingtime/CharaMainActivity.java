@@ -22,12 +22,15 @@ public class CharaMainActivity extends FragmentActivity {
 	ViewPager viewPager = null;
 	private AdView adView;
 	private AdRequest adRequest;
+	boolean hasTwoPanes;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Log.d("MAIN", "onCreate");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_chara);
+
+		hasTwoPanes = getResources().getBoolean(R.bool.has_two_panes);
+
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		viewPager.setAdapter(new MyAdapter(fragmentManager));
@@ -71,26 +74,63 @@ public class CharaMainActivity extends FragmentActivity {
 		}
 
 		@Override
+		public float getPageWidth(int position) {
+			// returns 0.5f to show two panes
+			if (hasTwoPanes == true) {
+				return (0.5f);
+			} else {
+				return (1f);
+			}
+		}
+
+		@Override
 		public CharSequence getPageTitle(int position) {
-			if (position == 0) {
-				String string = getResources().getString(
-						appsauceco.drinkingtime.R.string.character1);
-				return string;
-			}
-			if (position == 1) {
-				String string = getResources().getString(
-						appsauceco.drinkingtime.R.string.character2);
-				return string;
-			}
-			if (position == 2) {
-				String string = getResources().getString(
-						appsauceco.drinkingtime.R.string.character3);
-				return string;
-			}
-			if (position == 3) {
-				String string = getResources().getString(
-						appsauceco.drinkingtime.R.string.character4);
-				return string;
+			if (hasTwoPanes == true) {
+				if (position == 0) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character1);
+					String string2 = getResources().getString(
+							appsauceco.drinkingtime.R.string.character2);
+					return string + " and " + string2;
+				}
+				if (position == 1) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character2);
+					String string2 = getResources().getString(
+							appsauceco.drinkingtime.R.string.character3);
+					return string + " and " + string2;
+				}
+				if (position == 2) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character3);
+					String string2 = getResources().getString(
+							appsauceco.drinkingtime.R.string.character4);
+					return string + " and " + string2;
+				}
+				if (position == 3) {
+					return null;
+				}
+			} else {
+				if (position == 0) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character1);
+					return string;
+				}
+				if (position == 1) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character2);
+					return string;
+				}
+				if (position == 2) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character3);
+					return string;
+				}
+				if (position == 3) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character4);
+					return string;
+				}
 			}
 			return null;
 		}
@@ -123,26 +163,17 @@ public class CharaMainActivity extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.more_apps:
-			appSauce(null);
+			Intent i = new Intent(Intent.ACTION_VIEW);
+			i.setData(Uri.parse("market://search?q=pub:App+Sauce+Co."));
+			startActivity(i);
 			return true;
 		case R.id.switchToGeneral:
-			switchToGeneral(null);
+			getApplicationContext();
+			this.finish();
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
-	}
-
-	public void appSauce(View v) {
-		Intent i = new Intent(Intent.ACTION_VIEW);
-		i.setData(Uri.parse("market://search?q=pub:App+Sauce+Co."));
-		startActivity(i);
-	}
-
-	public void switchToGeneral(View v) {
-		Log.d("MAIN", "swtichToGeneral");
-		getApplicationContext();
-		this.finish();
 	}
 
 	public void oneDrink(View ImageView) {
