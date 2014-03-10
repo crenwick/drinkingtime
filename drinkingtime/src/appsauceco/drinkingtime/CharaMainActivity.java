@@ -49,7 +49,7 @@ public class CharaMainActivity extends FragmentActivity {
 				.build();
 		adView.loadAd(adRequest);
 
-		// comment out to take screenshots without an ad:
+		// comment out to allow ads to appear:
 		//adView.setVisibility(View.GONE);
 	}
 
