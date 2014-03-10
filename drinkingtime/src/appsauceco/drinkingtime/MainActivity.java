@@ -1,6 +1,9 @@
 package appsauceco.drinkingtime;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -28,7 +31,11 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
+		if (isXLargeScreen(getApplicationContext())) {
+			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		}
+
 		hasTwoPanes = getResources().getBoolean(R.bool.has_two_panes);
 
 		viewPager = (ViewPager) findViewById(R.id.pager);
@@ -44,12 +51,15 @@ public class MainActivity extends FragmentActivity {
 
 	}
 
+	public static boolean isXLargeScreen(Context context) {
+		return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_XLARGE;
+	}
+
 	class MyAdapter extends FragmentPagerAdapter {
 
 		public MyAdapter(FragmentManager fm) {
 			super(fm);
 			Log.d("MAIN", "FragmentManger method");
-			// TODO Auto-generated constructor stub
 		}
 
 		@Override
@@ -87,10 +97,10 @@ public class MainActivity extends FragmentActivity {
 				if (position == 0) {
 					return "Level 1 and 2";
 				}
-				if (position == 1){
+				if (position == 1) {
 					return "Level 2 and 3";
 				}
-				if (position == 2){
+				if (position == 2) {
 					return null;
 				}
 			} else {
@@ -103,7 +113,7 @@ public class MainActivity extends FragmentActivity {
 				if (position == 2) {
 					return "Level 3";
 				}
-			} 
+			}
 			return null;
 		}
 

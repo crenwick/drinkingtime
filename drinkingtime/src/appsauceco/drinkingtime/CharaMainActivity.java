@@ -1,6 +1,9 @@
 package appsauceco.drinkingtime;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -29,6 +32,10 @@ public class CharaMainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_chara);
 
+		if (isXLargeScreen(getApplicationContext())) {
+			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		}
+
 		hasTwoPanes = getResources().getBoolean(R.bool.has_two_panes);
 
 		viewPager = (ViewPager) findViewById(R.id.pager);
@@ -42,6 +49,10 @@ public class CharaMainActivity extends FragmentActivity {
 				.build();
 		adView.loadAd(adRequest);
 
+	}
+
+	public static boolean isXLargeScreen(Context context) {
+		return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_XLARGE;
 	}
 
 	class MyAdapter extends FragmentPagerAdapter {
