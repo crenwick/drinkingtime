@@ -7,38 +7,41 @@
     <string name="finishDrink">finish drink</string>
     <string name="characters">characters</string>
     <string name="general">general</string>
+    <string name="and">and</string>
     <string name="drinkOnce">Drink once!</string>
     <string name="finishYourDrink">Finish your drink!</string>
     <string name="character1">Finn the Human</string>
     <string name="character2">Jake the Dog</string>
     <string name="character3">Ice King</string>
     <string name="character4">Princess Bubblegum</string>
+    <string name="character5">LSP</string>
 
     <string-array name="level1">
         <item>A Princess makes an appearance.</item>
         <item>Jake uses his powers.</item>
         <item>Someone uses spaghetti arms.</item>
         <item>Ice King captures and man-handles a princess.</item>
-        <item>Princess Bubblegum gives mixed signals.</item>
-        <item>Ice King\'s crown is knocked off.</item>
-        <item>Someone farts, barfs or burps.</item>
-        <item>Someone plays Bmo.</item>
-        <item>Spot the snail!</item>
-        <item>If someone sings a song, drink until it\'s over.</item>
+        <item>Every time someone says something \"Mathmatical.\"</item>
+        <item>Anytime Princess Bubblegum gives mixed signals.</item>
+        <item>Every time Ice King\'s crown is knocked off.</item>
+        <item>Every time someone farts, barfs or burps.</item>
+        <item>Anytime someone plays Bmo.</item>
+        <item>Every time you spot the snail!</item>
     </string-array>
     <string-array name="level2">
+        <item>Anytime someone sings a song, drink until it\’s over.</item>
         <item>Finn\’s love for Princess Bubblegum is mentioned</item>
         <item>Anyone says bro or fist bumps.</item>
         <item>Glob or lump is used in place of swearing.</item>
-        <item>Math terms are used.</item>
+        <item>If LSP names animals and gossips with them.</item>
         <item>Jake plays his viola or shelby shows his face.</item>
         <item>Ice King strips or you see his underwear.</item>
         <item>Anytime adventure time is said, yelled or mentioned.</item>
         <item>Anytime the candy kingdom is threatened.</item>
         <item>If the Ice King is writing in or reading his diary.</item>
-        <item>Finn\’s voice cracks.</item>
     </string-array>
     <string-array name="level3">
+        <item>Finn\’s voice cracks or is noticeably younger in consecutive episodes.</item>
         <item>Lsp gives a name to an animal and gossips with them.</item>
         <item>Anytime Lsp mentions Brad or Melissa.</item>
         <item>Drink for every penguin you see.</item>
@@ -46,57 +49,68 @@
         <item>Anytime tree trunks creeps you out.</item>
         <item>Someone uses magic for good or evil.</item>
         <item>Cinnamon bun fails Princess Bubblegum.</item>
-        <item>Someone plays Bmo.</item>
         <item>Lady rainicorn appears in an episode and speaks Korean.</item>
         <item>Anytime the Gumball Guardians awake.</item>
     </string-array>
     <string-array name="chara1">
-        <item>Finn 1</item>
-        <item>Finn 2</item>
-        <item>Finn 3</item>
-        <item>Finn 4</item>
-        <item>Finn 5</item>
-        <item>Finn 6</item>
-        <item>Finn 7</item>
-        <item>Finn 8</item>
-        <item>Finn 9</item>
-        <item>Finn 10</item>
+        <item>Finn\’s voice cracks or is noticeably younger in consecutive episodes.</item>
+        <item>Finn\’s love for Princess Bubblegum is mentioned.</item>
+        <item>Whenever Finn fights someone and draws his sword.</item>
+        <item>Take a drink if he yells Adventure Time!</item>
+        <item>Anytime Jake has to save Finn with his powers.</item>
+        <item>Whenever Finn gives his battle cry.</item>
+        <item>Every time he makes a meme face, including sparkly eyes.</item>
+        <item>Whenever Finn stops to save someone.</item>
+        <item>Anytime you see Finn\’s Hair or his hat is taken off.</item>
+        <item>Baby Finn is shown.</item>
     </string-array>
     <string-array name="chara2">
-        <item>Jake 1</item>
-        <item>Jake 2</item>
-        <item>Jake 3</item>
-        <item>Jake 4</item>
-        <item>Jake 5</item>
-        <item>Jake 6</item>
-        <item>Jake 7</item>
-        <item>Jake 8</item>
-        <item>Jake 9</item>
-        <item>Jake 10</item>
+        <item>Jake plays his viola or shelby shows his face.</item>
+        <item>Every time Jake uses his powers.</item>
+        <item>Anytime Jake eats ice cream or seen cooking.</item>
+        <item>Take a drink every time he does something immoral.</item>
+        <item>If he\'s seen with Lady Rainicorn.</item>
+        <item>Take a drink each time Jake\'s voice changes.</item>
+        <item>Anytime Jake is seen playing BMO</item>
+        <item>Every time Jake encounters or sees his Dad in anyway.</item>
+        <item>Whenever Jake leaves after Finn gets weird or into something.</item>
+        <item>If Jake is shown as a young pup.</item>
     </string-array>
     <string-array name="chara3">
-        <item>Ice King 1</item>
-        <item>Ice King 2</item>
-        <item>Ice King 3</item>
-        <item>Ice King 4</item>
-        <item>Ice King 5</item>
-        <item>Ice King 6</item>
-        <item>Ice King 7</item>
-        <item>Ice King 8</item>
-        <item>Ice King 9</item>
-        <item>Ice King 10</item>
+        <item>If the Ice King is writing in or reading his diary.</item>
+        <item>Ice King strips or you see his underwear.</item>
+        <item>Every time Ice King\’s crown is knocked off.</item>
+        <item>Every time Ice King captures and man-handles a princess.</item>
+        <item>If the Ice King uses his powers for good or evil</item>
+        <item>Take a drink if he says, "Gunter!" </item>
+        <item>Whenever  he plays the drums.</item>
+        <item>Anytime he says something funny that suddenly becomes incredibly depressing when you remember his past.</item>
+        <item>Anytime you can hear Spongebob through the Ice King.</item>
+        <item>Anytime the Ice King is seen Beard Flying.</item>
     </string-array>
     <string-array name="chara4">
-        <item>Bubblegum 1</item>
-        <item>Bubblegum 2</item>
-        <item>Bubblegum 3</item>
-        <item>Bubblegum 4</item>
-        <item>Bubblegum 5</item>
-        <item>Bubblegum 6</item>
-        <item>Bubblegum 7</item>
-        <item>Bubblegum 8</item>
-        <item>Bubblegum 9</item>
-        <item>Bubblegum 10</item>
+        <item>Anytime Princess Bubblegum gives mixed signals.</item>
+        <item>Every time Princess Bubblegum gets captured by the Ice King.</item>
+        <item>Whenever the Princess calls for the Banana Guards.</item>
+        <item>If she is seen on the throne.</item>
+        <item>Anytime an experiment goes horribly wrong i.e anytime you see Lemon Grab.</item>
+        <item>Take a drink if she yells at someone.</item>
+        <item>Anytime the Princess experiences Sanity Slippage.</item>
+        <item>Take a drink if she\'s wearing a different outfit than her pink dress.</item>
+        <item>Take a drink if she does or says something scientific.</item>
+        <item>Anytime she lies to protect the Candy Kingdom</item>
+    </string-array>
+    <string-array name="chara5">
+        <item>If she says \"Whatever.\"</item>
+        <item>Anytime she says "Glob" or "Lumping".</item>
+        <item>Take a drink if her arms are akimbo.</item>
+        <item>Every time Lumpy Space is shown or mentioned.</item>
+        <item>Take a drink if she wants to be more beautiful.</item>
+        <item>If LSP names animals and gossips with them.</item>
+        <item>Take a drink if she\'s being melodramatic.</item>
+        <item>If she mentions Brad or Melissa.</item>
+        <item>Whenever  she mentions partying.</item>
+        <item>Every time she mentions her lumps.</item>
     </string-array>
 
 </resources>

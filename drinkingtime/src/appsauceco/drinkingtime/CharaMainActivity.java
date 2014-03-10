@@ -49,6 +49,8 @@ public class CharaMainActivity extends FragmentActivity {
 				.build();
 		adView.loadAd(adRequest);
 
+		// comment out to take screenshots without an ad:
+		//adView.setVisibility(View.GONE);
 	}
 
 	public static boolean isXLargeScreen(Context context) {
@@ -74,6 +76,8 @@ public class CharaMainActivity extends FragmentActivity {
 				fragment = new FragmentChara3();
 			} else if (i == 3) {
 				fragment = new FragmentChara4();
+			} else if (i == 4) {
+				fragment = new FragmentChara5();
 			}
 			Log.d("MAIN", "about to return getItem method");
 			return fragment;
@@ -81,7 +85,7 @@ public class CharaMainActivity extends FragmentActivity {
 
 		@Override
 		public int getCount() {
-			return 4;
+			return 5;
 		}
 
 		@Override
@@ -97,28 +101,32 @@ public class CharaMainActivity extends FragmentActivity {
 		@Override
 		public CharSequence getPageTitle(int position) {
 			if (hasTwoPanes == true) {
+				String and = getResources().getString(
+						appsauceco.drinkingtime.R.string.and);
+				String chara1 = getResources().getString(
+						appsauceco.drinkingtime.R.string.character1);
+				String chara2 = getResources().getString(
+						appsauceco.drinkingtime.R.string.character2);
+				String chara3 = getResources().getString(
+						appsauceco.drinkingtime.R.string.character3);
+				String chara4 = getResources().getString(
+						appsauceco.drinkingtime.R.string.character4);
+				String chara5 = getResources().getString(
+						appsauceco.drinkingtime.R.string.character5);
+
 				if (position == 0) {
-					String string = getResources().getString(
-							appsauceco.drinkingtime.R.string.character1);
-					String string2 = getResources().getString(
-							appsauceco.drinkingtime.R.string.character2);
-					return string + " and " + string2;
+					return chara1 + " " + and + " " + chara2;
 				}
 				if (position == 1) {
-					String string = getResources().getString(
-							appsauceco.drinkingtime.R.string.character2);
-					String string2 = getResources().getString(
-							appsauceco.drinkingtime.R.string.character3);
-					return string + " and " + string2;
+					return chara2 + " " + and + " " + chara3;
 				}
 				if (position == 2) {
-					String string = getResources().getString(
-							appsauceco.drinkingtime.R.string.character3);
-					String string2 = getResources().getString(
-							appsauceco.drinkingtime.R.string.character4);
-					return string + " and " + string2;
+					return chara3 + " " + and + " " + chara4;
 				}
 				if (position == 3) {
+					return chara4 + " " + and + " " + chara5;
+				}
+				if (position == 4) {
 					return null;
 				}
 			} else {
@@ -140,6 +148,11 @@ public class CharaMainActivity extends FragmentActivity {
 				if (position == 3) {
 					String string = getResources().getString(
 							appsauceco.drinkingtime.R.string.character4);
+					return string;
+				}
+				if (position == 4) {
+					String string = getResources().getString(
+							appsauceco.drinkingtime.R.string.character5);
 					return string;
 				}
 			}

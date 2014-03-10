@@ -13,6 +13,7 @@ public final class R {
         public static final int chara2=0x7f0a0004;
         public static final int chara3=0x7f0a0005;
         public static final int chara4=0x7f0a0006;
+        public static final int chara5=0x7f0a0007;
         public static final int level1=0x7f0a0000;
         public static final int level2=0x7f0a0001;
         public static final int level3=0x7f0a0002;
@@ -269,6 +270,7 @@ containing a value of this type.
         public static final int main=0x7f0c0001;
     }
     public static final class string {
+        public static final int and=0x7f060020;
         public static final int app_name=0x7f06001a;
         /**   Title for notification shown when GooglePlayServices needs to be
         enabled for a application to work. [CHAR LIMIT=70] 
@@ -293,10 +295,11 @@ containing a value of this type.
         [CHAR LIMIT=70] 
          */
         public static final int auth_client_using_bad_version_title=0x7f060014;
-        public static final int character1=0x7f060022;
-        public static final int character2=0x7f060023;
-        public static final int character3=0x7f060024;
-        public static final int character4=0x7f060025;
+        public static final int character1=0x7f060023;
+        public static final int character2=0x7f060024;
+        public static final int character3=0x7f060025;
+        public static final int character4=0x7f060026;
+        public static final int character5=0x7f060027;
         public static final int characters=0x7f06001e;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
@@ -369,10 +372,10 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int drinkOnce=0x7f060020;
+        public static final int drinkOnce=0x7f060021;
         public static final int drinkOne=0x7f06001c;
         public static final int finishDrink=0x7f06001d;
-        public static final int finishYourDrink=0x7f060021;
+        public static final int finishYourDrink=0x7f060022;
         public static final int general=0x7f06001f;
         public static final int more_apps=0x7f06001b;
     }

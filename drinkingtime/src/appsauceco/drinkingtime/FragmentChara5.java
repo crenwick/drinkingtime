@@ -15,7 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class FragmentLevel1 extends Fragment {
+public class FragmentChara5 extends Fragment {
 	ListView list;
 
 	@Override
@@ -61,8 +61,7 @@ public class FragmentLevel1 extends Fragment {
 			list = new ArrayList<SingleRow>();
 			context = c;
 			Resources res = c.getResources();
-
-			String[] rules = res.getStringArray(R.array.level1);
+			String[] rules = res.getStringArray(R.array.chara5);
 
 			for (int i = 0; i < 10; i++) {
 				list.add(new SingleRow(rules[i]));

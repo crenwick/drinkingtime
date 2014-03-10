@@ -26,6 +26,7 @@ public class MainActivity extends FragmentActivity {
 	private AdView adView;
 	private AdRequest adRequest;
 	boolean hasTwoPanes;
+	public static int ruleToDisplay;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,9 @@ public class MainActivity extends FragmentActivity {
 				.addTestDevice("6b0284de").addTestDevice("c0808a004e5b92f")
 				.build();
 		adView.loadAd(adRequest);
+		
+		// comment out to take screenshots without an ad:
+		//adView.setVisibility(View.GONE);
 
 	}
 
@@ -63,9 +67,10 @@ public class MainActivity extends FragmentActivity {
 		}
 
 		@Override
-		public Fragment getItem(int i) {
+		public Fragment getItem(int i) {			
 			Fragment fragment = null;
 			if (i == 0) {
+				ruleToDisplay = i;
 				fragment = new FragmentLevel1();
 			} else if (i == 1) {
 				fragment = new FragmentLevel2();

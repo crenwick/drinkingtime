@@ -4,7 +4,8 @@ Drinking Time
 An Android app drinking game for the TV show Adventure Time.
 
 ## Features
-* 11 rules
+* 3 levels of general play rules
+* 5 characters to play from
 * Custom tablet layout
 * link to the app store
 * Toast messages!
