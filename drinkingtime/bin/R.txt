@@ -68,7 +68,8 @@ int drawable ic_plusone_medium_off_client 0x7f02001c
 int drawable ic_plusone_small_off_client 0x7f02001d
 int drawable ic_plusone_standard_off_client 0x7f02001e
 int drawable ic_plusone_tall_off_client 0x7f02001f
-int drawable shot 0x7f020020
+int drawable level_numbers 0x7f020020
+int drawable shot 0x7f020021
 int id LinearLayout 0x7f050005
 int id adView 0x7f050006
 int id hybrid 0x7f050004
