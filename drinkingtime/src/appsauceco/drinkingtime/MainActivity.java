@@ -17,14 +17,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends FragmentActivity {
 
 	ViewPager viewPager = null;
-	private AdView adView;
-	private AdRequest adRequest;
+//	private AdView adView;
+//	private AdRequest adRequest;
 	boolean hasTwoPanes;
 	public static int ruleToDisplay;
 
@@ -43,12 +43,12 @@ public class MainActivity extends FragmentActivity {
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		viewPager.setAdapter(new MyAdapter(fragmentManager));
 
-		adView = (AdView) this.findViewById(R.id.adView);
-		adRequest = new AdRequest.Builder()
-				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-				.addTestDevice("6b0284de").addTestDevice("c0808a004e5b92f")
-				.build();
-		adView.loadAd(adRequest);
+//		adView = (AdView) this.findViewById(R.id.adView);
+//		adRequest = new AdRequest.Builder()
+//				.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+//				.addTestDevice("6b0284de").addTestDevice("c0808a004e5b92f")
+//				.build();
+//		adView.loadAd(adRequest);
 		
 		// comment out to allow ads to appear:
 		//adView.setVisibility(View.GONE);
@@ -127,7 +127,7 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	protected void onPause() {
 		Log.d("MAIN", "onPause");
-		adView.pause();
+//		adView.pause();
 		super.onPause();
 	}
 
@@ -135,7 +135,7 @@ public class MainActivity extends FragmentActivity {
 	protected void onResume() {
 		Log.d("MAIN", "onResume");
 		super.onResume();
-		adView.resume();
+//		adView.resume();
 	}
 
 	@Override
@@ -178,7 +178,7 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	protected void onDestroy() {
 		Log.d("MAIN", "onDestroy");
-		adView.destroy();
+//		adView.destroy();
 		super.onDestroy();
 	}
 }
